@@ -26,14 +26,16 @@ body {
 
 /* Titulos */
 h1 {
-    font-size: 2rem;
-    color: #222;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--color-primario);
 }
 
 h2 {
-    font-size: 1.5rem;
-    color: #222;
-    margin-bottom: 10px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--color-texto);
+    margin-bottom: 16px;
 }
 
 /* Secciones */
@@ -60,3 +62,18 @@ footer {
     text-align: center;
 }
 
+.btn {
+    display: inline-block;
+    padding: 14px 32px;
+    background-color: var(--color-primario);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: var(--color-primario-oscuro);
+    transform: translateY(-2px);
+}
