@@ -40,28 +40,29 @@ h2 {
 
 /* Secciones */
 header {
-    padding: 20px;
-    background-color: #eeeeee;
+    padding: 24px 40px;
+    background-color: var(--color-superficie);
+    border-bottom: 4px solid var(--color-primario);
 }
 
 section {
-    padding: 40px 20px;
+    padding: 60px 24px;
 }
 
 .hero {
-    background-color: #f5f5f5;
+    background-color: var(--color-hero);
 }
 
 .benefits {
-    background-color: #ffffff;
+    background-color: var(--color-fondo);
 }
 
 footer {
-    padding: 20px;
-    background-color: #eeeeee;
+    padding: 40px 24px;
+    background-color: var(--color-superficie);
+    border-top: 4px solid var(--color-primario);
     text-align: center;
 }
-
 .btn {
     display: inline-block;
     padding: 14px 32px;
