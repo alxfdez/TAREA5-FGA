@@ -1,3 +1,14 @@
+
+:root {
+    --color-primario: #6c5ce7;
+    --color-primario-oscuro: #4834d4;
+    --color-texto: #2d3436;
+    --color-fondo: #f1f2f6;
+    --color-superficie: #ffffff;
+    --color-hero: #e8e6ff;
+}
+
+
 /* Estilos cuerpo */
 * {
     margin: 0;
@@ -5,33 +16,37 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #ffffff;
-}git
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+}
 
 /* Titulos */
 h1 {
-    font-size: 2rem;
-    color: #222;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--color-primario);
 }
 
 h2 {
-    font-size: 1.5rem;
-    color: #222;
-    margin-bottom: 10px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--color-texto);
+    margin-bottom: 16px;
 }
 
 /* Secciones */
 header {
-    padding: 20px;
-    background-color: #eeeeee;
+    padding: 24px 40px;
+    background-color: var(--color-superficie);
+    border-bottom: 4px solid var(--color-primario);
 }
 
 section {
-    padding: 40px 20px;
+    padding: 60px 24px;
 }
 
 .hero {
@@ -87,8 +102,23 @@ section {
 }
 
 footer {
-    padding: 20px;
-    background-color: #eeeeee;
+    padding: 40px 24px;
+    background-color: var(--color-superficie);
+    border-top: 4px solid var(--color-primario);
     text-align: center;
 }
+.btn {
+    display: inline-block;
+    padding: 14px 32px;
+    background-color: var(--color-primario);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: background-color 0.2s, transform 0.2s;
+}
 
+.btn:hover {
+    background-color: var(--color-primario-oscuro);
+    transform: translateY(-2px);
+}
